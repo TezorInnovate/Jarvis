@@ -64,15 +64,15 @@ if __name__ == "__main__":
         #logic building for tasks
 
         if "open notepad" in query:
-            npath = "C:\\WINDOWS\\system32\\notepad.exe"
+            npath = "  "
             os.startfile(npath)
 
         elif "open adobe reader" in query:
-            apath = "C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat\\Acrobat.exe"
+            apath = "  "
             os.startfile(apath)
 
         elif "open command prompt" in query:
-            os.startfile("C:\\WINDOWS\\system32\\cmd.exe")
+            os.startfile("  ")
 
         
         elif "open camera" in query:
@@ -85,12 +85,6 @@ if __name__ == "__main__":
                     break;
             cap.release()
             cv2.destroyAllWindows()
-
-        elif "play quran" in query:
-            quran_dir = "C:\\Users\\Faizan Ahmed Syed\\Desktop\\Quran"
-            quran = os.listdir(quran_dir)
-            rd = random.choice(quran)
-            os.startfile(os.path.join(quran_dir, rd))
 
 
         elif "ip address" in query:
